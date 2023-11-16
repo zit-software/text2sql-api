@@ -14,6 +14,8 @@ certifi==2023.7.22
     # via requests
 charset-normalizer==3.3.2
     # via requests
+click==8.1.7
+    # via uvicorn
 fastapi==0.104.1
     # via -r requirements.in
 filelock==3.13.1
@@ -26,6 +28,8 @@ fsspec==2023.10.0
     # via
     #   huggingface-hub
     #   torch
+h11==0.14.0
+    # via uvicorn
 huggingface-hub==0.17.3
     # via
     #   tokenizers
@@ -121,3 +125,5 @@ typing-extensions==4.8.0
     #   torch
 urllib3==2.0.7
     # via requests
+uvicorn==0.24.0.post1
+    # via -r requirements.in

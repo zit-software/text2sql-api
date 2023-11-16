@@ -52,8 +52,17 @@ class Text2SqlRes(BaseModel):
     answer: str
 
 
+class StatusRes(BaseModel):
+    status: int
+
+
 @app.post('/text2sql', summary='Text 2 SQL', tags=['Text 2 SQL'], response_model=Text2SqlRes)
 async def text2sql(body: Text2SqlReq):
     answer = predict(body.context, body.question)
 
     return Text2SqlRes(answer=answer)
+
+
+@app.get('/status', summary='Check server status', tags=['Status'], response_model=StatusRes)
+async def status():
+    return StatusRes(status=200)
