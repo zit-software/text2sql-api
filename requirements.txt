@@ -30,7 +30,7 @@ huggingface-hub==0.17.3
     # via
     #   tokenizers
     #   transformers
-idna==3.4
+idna==3.7
     # via
     #   anyio
     #   requests
