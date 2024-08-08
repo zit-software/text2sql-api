@@ -79,7 +79,7 @@ packaging==23.2
     # via
     #   huggingface-hub
     #   transformers
-pydantic==1.10.9
+pydantic==1.10.13
     # via
     #   -r requirements.in
     #   fastapi
